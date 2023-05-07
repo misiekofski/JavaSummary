@@ -18,17 +18,26 @@ public class App {
         peopleList.add(t2);
         peopleList.add(m1);
 
-        // yearly wages of people working in our company, one by one
-        peopleList.forEach(p -> {
-            System.out.print(p.getPersonFullName() + " gets yearly: ");
-            System.out.println(p.getYearlyWage());
-        });
+        // streams and other weird solutions....
 
-        // how much do we pay to all employees in our company
-        double howMuchDoWePay = peopleList
-                .stream()
-                .mapToDouble(ICompensable::getYearlyWage)
-                .sum();
+//        peopleList.forEach(p -> {
+//            System.out.print(p.getPersonFullName() + " gets yearly: ");
+//            System.out.println(p.getYearlyWage());
+//        });
+
+//        double howMuchDoWePay = peopleList
+//                .stream()
+//                .mapToDouble(ICompensable::getYearlyWage)
+//                .sum();
+
+        double howMuchDoWePay = 0;
+
+        for (ICompensable p : peopleList) {
+            // yearly wages of people working in our company, one by one
+            System.out.println(p.getPersonFullName() + " gets " + p.getYearlyWage() + " yearly ");
+            // add each wage to total amount
+            howMuchDoWePay += p.getYearlyWage();
+        }
 
         System.out.println("In summary we pay: " + howMuchDoWePay + " yearly to all employees.");
 
