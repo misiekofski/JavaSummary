@@ -1,6 +1,6 @@
 package students;
 
-public class Manager extends Person implements ICompensable {
+public class Manager extends Person implements IEmployable {
     private double successShare;
 
     public Manager(String name, String surname, double successShare) {

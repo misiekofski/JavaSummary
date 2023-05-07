@@ -1,6 +1,6 @@
 package students;
 
-public class Teacher extends Person implements ICompensable {
+public class Teacher extends Person implements IEmployable {
     private double monthlyWage;
     public Teacher(String name, String surname) {
         super(name, surname);

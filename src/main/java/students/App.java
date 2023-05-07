@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println("Kadry...");
-        List<ICompensable> peopleList = new ArrayList<>();
+        List<IEmployable> peopleList = new ArrayList<>();
 
         // let's create new different types of employees
         Teacher t1 = new Teacher("Jan", "Kowalski", 6666);
@@ -32,7 +32,7 @@ public class App {
 
         double howMuchDoWePay = 0;
 
-        for (ICompensable p : peopleList) {
+        for (IEmployable p : peopleList) {
             // yearly wages of people working in our company, one by one
             System.out.println(p.getPersonFullName() + " gets " + p.getYearlyWage() + " yearly ");
             // add each wage to total amount
