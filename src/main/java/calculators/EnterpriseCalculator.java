@@ -16,4 +16,8 @@ public class EnterpriseCalculator extends PremiumCalculator {
         addOperation("Converted PLN: " + pln + "to USD, got: " + result);
         return result;
     }
+
+    public static int getOperationsAmount() {
+        return operationsAmount;
+    }
 }

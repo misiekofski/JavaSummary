@@ -11,6 +11,9 @@ public class Calculator {
     }
 
     public void printOperations() {
+        if (operations.size()==0) {
+            System.out.println("Operation list is empty.");
+        }
         for(String o : operations) {
             System.out.println(o);
         }
@@ -26,25 +29,25 @@ public class Calculator {
 
     public double add(double x, double y) {
         double result = x+y;
-        addOperation("Added " + x + " to " + y + "got result " + result);
+        addOperation("Added " + x + " to " + y + " got result " + result);
         return result;
     }
 
     public double subtract(double x, double y) {
         double result = x-y;
-        addOperation("Subtracted " + y + " from " + x + "got result " + result);
+        addOperation("Subtracted " + y + " from " + x + " got result " + result);
         return result;
     }
 
     public double multiply(double x, double y) {
         double result = x*y;
-        addOperation("Multiplied " + x + " by " + y + "got result " + result);
+        addOperation("Multiplied " + x + " by " + y + " got result " + result);
         return result;
     }
 
     public double divide(double x, double y) {
         double result = x/y;
-        addOperation("Divided " + x + " by " + y + "got result " + result);
+        addOperation("Divided " + x + " by " + y + " got result " + result);
         return result;
     }
 }
