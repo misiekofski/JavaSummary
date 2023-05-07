@@ -1,4 +1,4 @@
-package students;
+package hr;
 
 public class Manager extends Person implements IEmployable {
     private double successShare;

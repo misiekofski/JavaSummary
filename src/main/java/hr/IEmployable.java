@@ -1,4 +1,4 @@
-package students;
+package hr;
 
 public interface IEmployable {
     public double getYearlyWage();

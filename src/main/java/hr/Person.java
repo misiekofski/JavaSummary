@@ -1,4 +1,4 @@
-package students;
+package hr;
 
 public class Person {
     private String name;

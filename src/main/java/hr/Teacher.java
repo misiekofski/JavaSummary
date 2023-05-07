@@ -1,4 +1,4 @@
-package students;
+package hr;
 
 public class Teacher extends Person implements IEmployable {
     private double monthlyWage;
