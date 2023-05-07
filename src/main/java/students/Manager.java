@@ -2,7 +2,6 @@ package students;
 
 public class Manager extends Person implements ICompensable {
     private double successShare;
-    private double monthlyWage;
 
     public Manager(String name, String surname, double successShare) {
         super(name, surname);
@@ -10,6 +9,6 @@ public class Manager extends Person implements ICompensable {
     }
 
     public double getYearlyWage() {
-        return (12 * monthlyWage) * (1+successShare);
+        return 200_000 * (1+successShare);
     }
 }
