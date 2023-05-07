@@ -12,7 +12,7 @@ public class EnterpriseCalculator extends PremiumCalculator {
 
     public double convertToEuro(double pln) {
         operationsAmount++;
-        double result = pln / 4.15;
+        double result = pln / 4.66;
         addOperation("Converted PLN: " + pln + "to USD, got: " + result);
         return result;
     }
