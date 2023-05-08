@@ -10,8 +10,8 @@ public class App {
         List<IEmployable> peopleList = new ArrayList<>();
 
         // let's create new different types of employees
-        Teacher t1 = new Teacher("Jan", "Kowalski", 6666);
-        Teacher t2 = new Teacher("Grazyna", "Nowak", 7777);
+        Tester t1 = new Tester("Jan", "Kowalski", 6666);
+        Tester t2 = new Tester("Grazyna", "Nowak", 7777);
         Manager m1 = new Manager("Michal", "Menadżerski", 0.2);
 
         peopleList.add(t1);

@@ -1,13 +1,13 @@
 package hr;
 
-public class Teacher extends Person implements IEmployable {
+public class Tester extends Person implements IEmployable {
     private double monthlyWage;
-    public Teacher(String name, String surname) {
+    public Tester(String name, String surname) {
         super(name, surname);
         monthlyWage = 8000.00;
     }
 
-    public Teacher(String name, String surname, double monthlyWage) {
+    public Tester(String name, String surname, double monthlyWage) {
         super(name, surname);
         this.monthlyWage = monthlyWage;
     }
