@@ -6,4 +6,9 @@ public class PremiumCalculator extends Calculator {
         addOperation(x + " to the power of " + y + " is " + result);
         return result;
     }
+
+    @Override
+    public void addOperation(String operation) {
+        this.operations.add("[" + java.time.LocalDate.now() + "] " + operation);
+    }
 }

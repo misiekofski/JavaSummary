@@ -25,11 +25,19 @@ public class App {
 
         System.out.println("====================");
         System.out.println("Enterprise calculator stuff");
-        EnterpriseCalculator enterpriseCalculator = new EnterpriseCalculator();
-        enterpriseCalculator.convertToEuro(100);
-        enterpriseCalculator.convertToUsd(300);
-        enterpriseCalculator.printOperations();
-        System.out.println("Number of enterprise usage: " + EnterpriseCalculator.getOperationsAmount());
+        EnterpriseCalculator ceoCalculator = new EnterpriseCalculator();
+        ceoCalculator.convertToEuro(100);
+        ceoCalculator.convertToUsd(300);
+        ceoCalculator.convertToUsd(1000);
+        EnterpriseCalculator seniorManagerCalculator = new EnterpriseCalculator();
+        seniorManagerCalculator.convertToEuro(666);
+        System.out.println("Number of enterprise usage: " + EnterpriseCalculator.getOperationsCounter());
 
+        System.out.println("====================");
+        System.out.println("CEO operations:");
+        ceoCalculator.printOperations();
+
+        System.out.println("Senior Manager operations:");
+        seniorManagerCalculator.printOperations();
     }
 }

@@ -1,23 +1,23 @@
 package calculators;
 
 public class EnterpriseCalculator extends PremiumCalculator {
-    private static int operationsAmount;
+    private static int operationsCounter;
 
     public double convertToUsd(double pln) {
-        operationsAmount++;
+        operationsCounter++;
         double result = pln / 4.15;
         addOperation("Converted PLN: " + pln + "to USD, got: " + result);
         return result;
     }
 
     public double convertToEuro(double pln) {
-        operationsAmount++;
+        operationsCounter++;
         double result = pln / 4.66;
         addOperation("Converted PLN: " + pln + "to USD, got: " + result);
         return result;
     }
 
-    public static int getOperationsAmount() {
-        return operationsAmount;
+    public static int getOperationsCounter() {
+        return operationsCounter;
     }
 }
