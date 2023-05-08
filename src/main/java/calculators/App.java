@@ -39,5 +39,10 @@ public class App {
 
         System.out.println("Senior Manager operations:");
         seniorManagerCalculator.printOperations();
+
+        System.out.println("====================");
+        System.out.println("Resetting operations for calc1");
+        calc1.resetOperations();
+        calc1.printOperations();
     }
 }
