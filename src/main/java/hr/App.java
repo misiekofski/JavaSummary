@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class App {
-
     public static void main(String[] args) {
         System.out.println("Kadry...");
         List<IEmployable> peopleList = new ArrayList<>();
@@ -42,4 +41,5 @@ public class App {
         System.out.println("In summary we pay: " + howMuchDoWePay + " yearly to all employees.");
 
     }
+
 }
